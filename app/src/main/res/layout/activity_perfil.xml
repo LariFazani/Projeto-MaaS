@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PerfilActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        android:background="@color/purple"
+        android:padding="16dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:layout_marginTop="24dp">
+
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="20sp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Possui mobilidade reduzida"
+        android:padding="16dp"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tranportes preferidos"
+        android:layout_marginTop="18dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/onibus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ônibus"
+            android:padding="16dp"/>
+
+        <CheckBox
+            android:id="@+id/metro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metrô"
+            android:padding="16dp"/>
+
+        <CheckBox
+            android:id="@+id/trem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trem"
+            android:padding="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/carro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carro"
+            android:padding="16dp"/>
+
+        <CheckBox
+            android:id="@+id/Patinete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patinete"
+            android:padding="16dp"/>
+
+        <CheckBox
+            android:id="@+id/bicicleta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bicicleta"
+            android:padding="16dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSalvarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Salvar"/>
+
+    <Button
+        android:id="@+id/btnCancelarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Cancelar"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/lightpurple"
+        android:layout_marginTop="86dp">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:padding="16dp"
+            android:src="@drawable/homeicon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/image2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:padding="16dp"
+            android:src="@drawable/realbrasileiro"
+            app:layout_constraintLeft_toRightOf="@id/image1"
+            app:layout_constraintRight_toLeftOf="@id/image3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:padding="16dp"
+            android:src="@drawable/codigoqr"
+            app:layout_constraintLeft_toRightOf="@id/image2"
+            app:layout_constraintRight_toLeftOf="@id/image4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:src="@drawable/outline_account_circle_24"
+            app:layout_constraintLeft_toRightOf="@id/image3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/rounded_bg"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

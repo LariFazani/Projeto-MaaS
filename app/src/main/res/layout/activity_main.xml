@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="32sp"
+        android:layout_marginBottom="34dp"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/txtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:layout_marginTop="20sp"/>
+
+    <Button
+        android:id="@+id/btnEsqueciSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueci minha senha"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnProsseguir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Prosseguir"/>
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Quero me cadastrar!"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
