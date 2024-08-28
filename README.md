@@ -3,6 +3,7 @@
 ## Descrição:
 
 O Projeto MaaS é um aplicativo inovador que simplifica a vida dos usuários ao oferecer uma plataforma única para planejar e realizar viagens urbanas. Nele, você pode encontrar as melhores rotas, comparar opções de transporte e pagar suas viagens de forma rápida e segura.
+Este repositório é da versão do projeto em Kotlin.
 
 ## Tecnologias:
 
