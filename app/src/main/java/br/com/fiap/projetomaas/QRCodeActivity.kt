@@ -1,21 +1,22 @@
 package br.com.fiap.projetomaas
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.widget.TextView
+import android.os.Handler
+import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
+
 
 class QRCodeActivity : AppCompatActivity() {
+
+    private lateinit var txtContagem: TextView
+    private var contador = 60
+    private val handler = Handler(Looper.getMainLooper())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +28,11 @@ class QRCodeActivity : AppCompatActivity() {
             insets
         }
 
+        txtContagem = findViewById(R.id.txtContagem)
+        // Inicia a contagem regressiva
+        startContagem()
+
+        //Menu Inferior
         val imageInicio = findViewById<ImageView>(R.id.image1)
         val imageFinanceiro = findViewById<ImageView>(R.id.image2)
         val imagePerfil = findViewById<ImageView>(R.id.image4Perfil)
@@ -46,6 +52,20 @@ class QRCodeActivity : AppCompatActivity() {
             startActivity(i4)
         }
 
+    }
 
+    private fun startContagem() {
+        handler.post(object : Runnable {
+            override fun run() {
+                txtContagem.text = contador.toString()
+                contador--
+
+                if (contador < 0) {
+                    contador = 60
+                }
+
+                handler.postDelayed(this, 1000) // Executa a cada 1 segundo
+            }
+        })
     }
 }

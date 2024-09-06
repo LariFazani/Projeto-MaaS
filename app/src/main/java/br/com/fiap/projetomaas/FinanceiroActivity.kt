@@ -24,6 +24,7 @@ class FinanceiroActivity : AppCompatActivity() {
             insets
         }
 
+        //Botão Cancelar
         val btnCancela = findViewById<Button>(R.id.btnCancelarPerfil)
 
         btnCancela.setOnClickListener {
@@ -31,6 +32,7 @@ class FinanceiroActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        //Menu Inferior
         val imageInicio = findViewById<ImageView>(R.id.image1)
         val imageQRCode = findViewById<ImageView>(R.id.image3)
         val imagePerfil = findViewById<ImageView>(R.id.image4Perfil)

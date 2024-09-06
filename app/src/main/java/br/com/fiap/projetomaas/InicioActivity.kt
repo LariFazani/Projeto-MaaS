@@ -20,6 +20,7 @@ class InicioActivity : AppCompatActivity() {
             insets
         }
 
+        //Menu Inferior
         val imageFinanceiro = findViewById<ImageView>(R.id.image2)
         val imageQRCode = findViewById<ImageView>(R.id.image3)
         val imagePerfil = findViewById<ImageView>(R.id.image4Perfil)
