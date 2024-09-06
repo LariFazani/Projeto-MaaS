@@ -62,7 +62,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
     private fun mostrarModalEsqueciSenha() {
         val caixaDialogo = LayoutInflater.from(this).inflate(R.layout.esqueci_senha,null)
         val txtEmailEsqueci = caixaDialogo.findViewById<EditText>(R.id.etEmail)

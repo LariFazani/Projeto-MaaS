@@ -1,11 +1,13 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+
 }
 
 android {
     namespace = "br.com.fiap.projetomaas"
     compileSdk = 34
+
 
     defaultConfig {
         applicationId = "br.com.fiap.projetomaas"
@@ -23,6 +25,7 @@ android {
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
+
             )
         }
     }
@@ -32,7 +35,12 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+
     }
+
+
+
+    buildToolsVersion = "34.0.0"
 }
 
 dependencies {
@@ -45,6 +53,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
 
 }

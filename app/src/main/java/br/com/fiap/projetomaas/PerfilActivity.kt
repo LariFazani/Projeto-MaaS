@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +22,25 @@ class PerfilActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val imageInicio = findViewById<ImageView>(R.id.image1)
+        val imageFinanceiro = findViewById<ImageView>(R.id.image2)
+        val imageQRCode = findViewById<ImageView>(R.id.image3)
+
+        imageInicio.setOnClickListener {
+            val i = Intent(this, FinanceiroActivity::class.java)
+            startActivity(i)
+        }
+
+        imageFinanceiro.setOnClickListener{
+            val i2 = Intent(this, FinanceiroActivity::class.java)
+            startActivity(i2)
+        }
+
+        imageQRCode.setOnClickListener{
+            val i3 = Intent(this, QRCodeActivity::class.java)
+            startActivity(i3)
         }
 
         val btnCancela = findViewById<Button>(R.id.btnCancelarPerfil)
@@ -52,7 +72,7 @@ class PerfilActivity : AppCompatActivity() {
                 findViewById<EditText>(R.id.txtNome).setText(name)
                 findViewById<EditText>(R.id.txtEmail).setText(email)
                 findViewById<CheckBox>(R.id.checkbox).isChecked = mobility
-                findViewById<CheckBox>(R.id.onibus).isChecked = bus
+                findViewById<CheckBox>(R.id.bus).isChecked = bus
                 findViewById<CheckBox>(R.id.metro).isChecked = metro
                 findViewById<CheckBox>(R.id.trem).isChecked = train
                 findViewById<CheckBox>(R.id.carro).isChecked = car
@@ -68,7 +88,7 @@ class PerfilActivity : AppCompatActivity() {
                 val name = findViewById<EditText>(R.id.txtNome).text.toString()
                 val email = findViewById<EditText>(R.id.txtEmail).text.toString()
                 val mobility = findViewById<CheckBox>(R.id.checkbox).isChecked
-                val bus = findViewById<CheckBox>(R.id.onibus).isChecked
+                val bus = findViewById<CheckBox>(R.id.bus).isChecked
                 val metro = findViewById<CheckBox>(R.id.metro).isChecked
                 val train = findViewById<CheckBox>(R.id.trem).isChecked
                 val car = findViewById<CheckBox>(R.id.carro).isChecked
@@ -86,7 +106,7 @@ class PerfilActivity : AppCompatActivity() {
                         if (train) 1 else 0,
                         if (car) 1 else 0,
                         if (scooter) 1 else 0,
-                        if (bike) 1 else 0
+                        if (bike) 1 else 0,
                     )
                     Toast.makeText(this, "Perfil atualizado com sucesso!", Toast.LENGTH_SHORT).show()
                 } else {
