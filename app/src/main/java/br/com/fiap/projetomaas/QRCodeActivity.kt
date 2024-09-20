@@ -11,7 +11,6 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 
-
 class QRCodeActivity : AppCompatActivity() {
 
     private lateinit var txtContagem: TextView
