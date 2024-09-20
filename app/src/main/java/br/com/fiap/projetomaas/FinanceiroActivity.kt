@@ -38,7 +38,7 @@ class FinanceiroActivity : AppCompatActivity() {
         val imagePerfil = findViewById<ImageView>(R.id.image4Perfil)
 
         imageInicio.setOnClickListener {
-            val i = Intent(this, FinanceiroActivity::class.java)
+            val i = Intent(this, InicioActivity::class.java)
             startActivity(i)
         }
 

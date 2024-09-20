@@ -29,7 +29,7 @@ class PerfilActivity : AppCompatActivity() {
         val imageQRCode = findViewById<ImageView>(R.id.image3)
 
         imageInicio.setOnClickListener {
-            val i = Intent(this, FinanceiroActivity::class.java)
+            val i = Intent(this, InicioActivity::class.java)
             startActivity(i)
         }
 
