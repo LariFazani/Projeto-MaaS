@@ -25,4 +25,3 @@ Este repositório é da versão do projeto em Kotlin.
 * **Sustentabilidade:** Reduza sua pegada de carbono ao optar por transportes públicos.
 * **Economia:** Aproveite tarifas especiais e promoções exclusivas.
 
-# Como usar
