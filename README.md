@@ -14,7 +14,7 @@ Este repositório é da versão do projeto em Kotlin.
 
 ## Funcionalidades:
 
-* **Planejamento de rotas:** Encontre a rota mais rápida e eficiente para o seu destino, considerando diferentes modos de transporte.
+* **Consulta de mapa:** Encontre pontos de referências de maneira rápida e eficiente.
 * **Integração de pagamentos:** Pague suas viagens de forma segura e conveniente através do aplicativo, utilizando diversas opções de pagamento.
 * **Informações em tempo real:** Receba atualizações sobre horários de ônibus, trens e outros meios de transporte.
 * **Personalização:** Crie perfis personalizados para armazenar suas preferências de viagem.
