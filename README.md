@@ -10,8 +10,7 @@ Este repositório é da versão do projeto em Kotlin.
 * **Linguagem de programação:** Kotlin, linguagem de programação moderna e concisa para desenvolvimento Android.
 * **IDE:** Android Studio, ambiente de desenvolvimento integrado (IDE) oficial para aplicativos Android.
 * **Bibliotecas:** Android e Androidx.
-* **Banco de dados:** SQL Lite.
-* **API:** SPTrans API para horários e trajetos de ônibus, Bike Sampa e a API do Waze.
+* **API:** API do Google Maps.
 
 ## Funcionalidades:
 
@@ -25,3 +24,5 @@ Este repositório é da versão do projeto em Kotlin.
 * **Conveniência:** Acesse todos os serviços de transporte em um único aplicativo.
 * **Sustentabilidade:** Reduza sua pegada de carbono ao optar por transportes públicos.
 * **Economia:** Aproveite tarifas especiais e promoções exclusivas.
+
+# Como usar
